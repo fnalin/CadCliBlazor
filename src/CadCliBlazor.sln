@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadCliBlazor.WebApp", "CadCliBlazor.WebApp\CadCliBlazor.WebApp.csproj", "{8A162B49-2251-45D4-9B29-EEF45E38BB14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F9D2B6E-E9B8-4C6A-9893-69DB07C472D9}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadCliBlazor.Domain", "CadCliBlazor.Domain\CadCliBlazor.Domain.csproj", "{6565DCE8-65F5-49DA-AED2-9D679BF13847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadCliBlazor.Api", "CadCliBlazor.Api\CadCliBlazor.Api.csproj", "{3939B2F6-24CF-4B20-84A3-65CBC05AB6CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadCliBlazor.Data", "CadCliBlazor.Data\CadCliBlazor.Data.csproj", "{28A436AE-DEEB-4546-98D0-B6F2FE60B8C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A162B49-2251-45D4-9B29-EEF45E38BB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A162B49-2251-45D4-9B29-EEF45E38BB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A162B49-2251-45D4-9B29-EEF45E38BB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A162B49-2251-45D4-9B29-EEF45E38BB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6565DCE8-65F5-49DA-AED2-9D679BF13847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6565DCE8-65F5-49DA-AED2-9D679BF13847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6565DCE8-65F5-49DA-AED2-9D679BF13847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6565DCE8-65F5-49DA-AED2-9D679BF13847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3939B2F6-24CF-4B20-84A3-65CBC05AB6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3939B2F6-24CF-4B20-84A3-65CBC05AB6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3939B2F6-24CF-4B20-84A3-65CBC05AB6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3939B2F6-24CF-4B20-84A3-65CBC05AB6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A436AE-DEEB-4546-98D0-B6F2FE60B8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A436AE-DEEB-4546-98D0-B6F2FE60B8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A436AE-DEEB-4546-98D0-B6F2FE60B8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A436AE-DEEB-4546-98D0-B6F2FE60B8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
