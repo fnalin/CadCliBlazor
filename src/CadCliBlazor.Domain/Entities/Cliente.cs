@@ -1,6 +1,6 @@
 namespace CadCliBlazor.Domain.Entities;
 
-public class Cliente
+public class Cliente : EntityBase
 {
     public int Id { get; set; }
     

@@ -1,3 +1,5 @@
+using CadCliBlazor.Data;
+using CadCliBlazor.Domain.Contracts.Repositories;
 using CadCliBlazor.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -5,12 +7,21 @@ namespace CadCliBlazor.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class ClientesController : ControllerBase
+public class ClientesController (IClienteRepository repository) : ControllerBase
 {
+    
+    
     [HttpGet]
-    public IActionResult GetALl() => Ok(new List<Cliente>()
+    public async Task<IActionResult> GetALl() => Ok(await repository.GetAllAsync());
+
+    [HttpGet("{id:int}")]
+    public async Task<IActionResult> GetById(int id)
     {
-        new() {Id = 1, Nome = "Fabiano", Email = "fabiano.nalin@gmail.com", Idade = 45},
-        new() {Id = 2, Nome = "Lucas", Email = "lucas@teste.com", Idade = 25}
-    }); 
+        var cliente = await repository.GetAsync(id);
+        
+        if (cliente is null)
+            return NotFound();
+        
+        return Ok(await repository.GetAsync(id));
+    }
 }

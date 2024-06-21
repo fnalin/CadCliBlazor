@@ -1,9 +1,4 @@
 ﻿services:
-  cadcliblazor.webapp:
-    image: cadcliblazor.webapp
-    build:
-      context: .
-      dockerfile: CadCliBlazor.WebApp/Dockerfile
 
   mssql_db:
     image: mcr.microsoft.com/azure-sql-edge:latest
